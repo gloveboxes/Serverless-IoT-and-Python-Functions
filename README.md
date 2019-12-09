@@ -20,9 +20,7 @@ Write an Internet or Things Serverless solution that helps Skippy, Kenny, and Wi
 
 ## Create an Azure IoT Hub, Register a device and Test.
 
-The Azure Iot Raspberry Pi Simulator is a great way to get started building an Azure IoT Solution. 
-
-
+The Azure IoT Raspberry Pi Simulator is a great way to get started building an Azure IoT Solution.
 
 Follow the documentation to [Connect Raspberry Pi online simulator to Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started). When you create an Azure IoT Hub be sure to select the **Free Tier**.
 
@@ -48,7 +46,7 @@ Follow the [Tutorial: Create a Python function for Azure Functions tutorial](htt
 4. Name your Event Hub Trigger
 5. Create new local app settings
 6. Select your subscription
-7. When prompted to select an event hub name space select **Skip for now**
+7. When prompted to select an event hub namespace select **Skip for now**
 8. Paste the Azure IoT Hub **Event Hub compatible name** as the name of the event hub from which to trigger.glovebox-iothub
 9 Select the **$Default** Event Hub consumer group
 
@@ -66,7 +64,7 @@ Open the **local.settings.json** file and create a new property named **IotHubCo
 
 ## Start the Azure Storage Local Emulator
 
-Azure Functions need access to Azure Storage Emulator for logging and check pointing. When developing functions it can be fast to use the Azure Storage Local Emulator.
+Azure Functions need access to Azure Storage Emulator for logging and checkpointing. When developing functions it can be fast to use the Azure Storage Local Emulator.
 
 To Install:
 
@@ -77,7 +75,7 @@ To Install:
 
 Now is a great time to test the Python Azure Function is triggered by new messages sent from the Raspberry Pi Simulator.
 
-1. Ensure the Raspberry i Simulator is running and sending telemetry. Configure the Iot Hub Device Connection string and click **Run**.
+1. Ensure the Raspberry Pi Simulator is running and sending telemetry. Configure the Azure IoT Hub Device Connection string and click **Run**.
 
     ![](resources/rpi-simulator.png)
 
