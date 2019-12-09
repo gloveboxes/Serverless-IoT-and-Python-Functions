@@ -1,5 +1,7 @@
 # Skippy, Kenny, and Willy need our help - Day 17 of the #25DaysOfServerless Challenge
 
+![](resources/avocados.png)
+
 ---
 
 This article is part of [#25DaysOfServerless](https://25daysofserverless.com/). New challenges will be published every day from Microsoft Cloud Advocates throughout the month of December. Find out more about how Microsoft Azure enables your [Serverless functions](https://docs.microsoft.com/azure/azure-functions/?WT.mc_id=25days_devto-blog-cxa).
@@ -199,4 +201,8 @@ Follow the [Getting started with the Twitter API](https://projects.raspberrypi.o
 3. Set a breakpoint in the ```python def sendTwitterMsg():``` function.
 4. Press F5 to rerun the function.
 5. Ensure the Raspberry Pi Simulator is running and sending telemetry
-6. 
+6. Check Twitter, you should see your message telling Skippy, Kenny, and Willy they should head to the beach.
+
+## Finished
+
+![](resources/congratulations.jpg)
