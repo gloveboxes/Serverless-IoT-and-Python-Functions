@@ -18,7 +18,7 @@ Write an Internet or Things Serverless solution that helps Skippy, Kenny, and Wi
 
 ---
 
-## Create an Azure IoT Hub, Register a device and Test.
+## Create an Azure IoT Hub, Register a device and Test
 
 The Azure IoT Raspberry Pi Simulator is a great way to get started building an Azure IoT Solution.
 
@@ -145,3 +145,58 @@ Follow the [Getting started with the Twitter API](https://projects.raspberrypi.o
             if temperature is not None and type(temperature) is float and 31 < temperature < 40:
                 print(temperature)
     ```
+
+### Install twython Python Twitter Library
+
+1. ```bash pip3 install twython```
+2. Add **twython** to the project requirements file. This will be needed when you package up the solution and deploy to Azure.
+
+### Integrate with Twitter
+
+1. Update the Pthyon code in the __init__.py file as follows:
+
+    ```python
+    import logging
+    import json
+    from twython import Twython
+    import os
+    import azure.functions as func
+
+    consumer_key = os.environ["consumer_key"]
+    consumer_secret = os.environ["consumer_secret"]
+    access_token = os.environ["access_token"]
+    access_token_secret = os.environ["access_token_secret"]
+
+    twitter = Twython(
+        consumer_key,
+        consumer_secret,
+        access_token,
+        access_token_secret
+    )
+
+
+    def sendTwitterMsg():
+        message = "Hey Skippy, Kenny, and Willy, time for an Australian Christmas Day on the beach #25DaysOfServerless"
+        try:
+            twitter.update_status(status=message)
+        except:
+            logging.info("problem tweeting from the Python Function")
+            logging.info("Tweeted: %s" % message)
+
+
+    def main(event: func.EventHubEvent):
+
+        data = event.get_body().decode('utf-8')
+        telemetry = json.loads(data)
+
+        for item in telemetry:
+            temperature = item.get("temperature")
+            if temperature is not None and type(temperature) is float and 31 < temperature < 40:
+                print(temperature)
+    ```
+
+2. Save the changes
+3. Set a breakpoint in the ```python def sendTwitterMsg():``` function.
+4. Press F5 to rerun the function.
+5. Ensure the Raspberry Pi Simulator is running and sending telemetry
+6. 
