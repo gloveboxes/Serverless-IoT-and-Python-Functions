@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "IoTHubConnectionString": "",
+    "consumer_key": "",
+    "consumer_secret": "",
+    "access_token": "",
+    "access_token_secret": ""
+  }
+}
