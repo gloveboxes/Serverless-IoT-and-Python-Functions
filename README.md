@@ -4,7 +4,7 @@
 
 ---
 
-This article is part of [#25DaysOfServerless](https://25daysofserverless.com/). New challenges will be published every day from Microsoft Cloud Advocates throughout the month of December. Find out more about how Microsoft Azure enables your [Serverless functions](https://docs.microsoft.com/azure/azure-functions/?WT.mc_id=25days_devto-blog-cxa).
+This article is part of [#25DaysOfServerless](https://25daysofserverless.com/). New challenges will be published every day from Microsoft Cloud Advocates throughout the month of December. Find out more about how Microsoft Azure enables your [Serverless functions](https://docs.microsoft.com/azure/azure-functions/?WT.mc_id=iot-0000-dglover).
 
 Have an idea or a solution? [Share your thoughts on Twitter!](https://twitter.com/intent/tweet?text=I%27m%20joining%20the%20@azureadvocates%20%2325DaysOfServerless%20challenge!!%20Learn%20more%20at%20https://aka.ms/25daysofserverless%20or%20see%20solutions%20at%20https://dev.to/search?q=25DaysOfServerless!%20Join%20me!)
 
@@ -24,7 +24,7 @@ Write an Internet or Things Serverless solution that helps Skippy, Kenny, and Wi
 
 The Azure IoT Raspberry Pi Simulator is a great way to get started building an Azure IoT Solution.
 
-Follow the documentation to [Connect Raspberry Pi online simulator to Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started). When you create an Azure IoT Hub be sure to select the **Free Tier**.
+Follow the documentation to [Connect Raspberry Pi online simulator to Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started?WT.mc_id=iot-0000-dglover). When you create an Azure IoT Hub be sure to select the **Free Tier**.
 
 ### Event Hub Connection Information
 
@@ -34,13 +34,13 @@ When you have created your Azure IoT Hub then navigate to the Azure IoT Hub **Bu
 
 ## Create a Python Azure Function
 
-Install the following [Visual Studio Code](https://code.visualstudio.com/) extensions
+Install the following [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=iot-0000-dglover) extensions
 
-* [Visual Studio Code Azure Functions Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=25daysofserverless-github-cxa)
-* [Visual Studio Code Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python&WT.mc_id=25daysofserverless-github-cxa)
+* [Visual Studio Code Azure Functions Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=iot-0000-dglover)
+* [Visual Studio Code Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python&WT.mc_id=iot-0000-dglover)
 
 
-Follow the [Tutorial: Create a Python function for Azure Functions tutorial](https://docs.microsoft.com/en-us/azure/python/tutorial-vs-code-serverless-python-02). 
+Follow the [Tutorial: Create a Python function for Azure Functions tutorial](https://docs.microsoft.com/azure/python/tutorial-vs-code-serverless-python-02?WT.mc_id=iot-0000-dglover). 
 
 1. Select **Python** as the language for the function project
 2. Optional, but recommended, create a virtual environment
@@ -70,7 +70,7 @@ Azure Functions need access to Azure Storage Emulator for logging and checkpoint
 
 To Install:
 
-* On Windows install and start the [Azure storage emulator](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator)
+* On Windows install and start the [Azure storage emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator?WT.mc_id=iot-0000-dglover)
 * On macOS and Linux install and start [Azurite](https://github.com/azure/azurite)
 
 ## Test the Python Azure Function
